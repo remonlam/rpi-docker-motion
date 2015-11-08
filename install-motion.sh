@@ -1,5 +1,5 @@
 # Update
-apt-get update
+#apt-get update
 
 # Install Motion
 apt-get install motion
