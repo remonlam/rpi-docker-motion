@@ -1,7 +1,24 @@
-#Running Motion in a Container on Raspbian Jessie
+#Motion in a Container on Raspbian Jessie
 ![Docker & Raspberry Pi](/images/docker+rpi.png)
 
-##Create a image from the Docker file
+##How to get all of this running
+Well first of all you need to have a Raspberry Pi and a micro SD card ( minimal 8GB).
+Second you need to have Raspbian Jessie, why not Wheezy? well currently Jessie is the only version that supports Docker out of the box (well sort of).
+
+###Copy and run the "pre-installer"
+What this script will do is make sure you're system is up to date and install the latest firmware versions for the Pi.
+Once that's done it will install Docker and pull a test image, also it will download the Dockerfile that we need for the next step.
+
+To download the scrip execute the following command;
+
+wget https://raw.githubusercontent.com/remonlam/rpi-docker-motion/master/pre-install.sh && chmod 755 pre-install.sh
+
+Once that has been done it's time to execute the script;
+
+./pre-install.sh
+
+###Create a image from the Docker file
+cd /home/pi/rpi-docker-motion
 docker build -t rpi-docker-motion .
 
 ##Once you successfully created the Docker image, it's time to start a new container;
