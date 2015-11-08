@@ -27,3 +27,6 @@ rm -rf /etc/motion/motion.conf
 
 # Download motion config file
 wget -P /etc/motion https://raw.githubusercontent.com/remonlam/rpi-docker-motion/master/motion.conf
+
+# Do some clean-up
+apt-get clean
