@@ -16,6 +16,9 @@ wget -P /usr/lib/arm-linux-gnueabihf https://github.com/remonlam/rpi-docker-moti
 wget -P /usr/lib/arm-linux-gnueabihf https://github.com/remonlam/rpi-docker-motion/raw/master/libs/libtasn1.so.3
 wget -P /usr/lib/arm-linux-gnueabihf https://github.com/remonlam/rpi-docker-motion/raw/master/libs/libx264.so.123
 
+# Remove old config file
+rm -rf /etc/default/motion
+
 # Download config file
 wget -P /etc/default https://raw.githubusercontent.com/remonlam/rpi-docker-motion/master/motion
 
