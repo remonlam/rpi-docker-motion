@@ -3,6 +3,8 @@
 # Start motion
 /etc/motion/./motion
 
+service motion start
+
 # Check if service is running
 service motion status
 
