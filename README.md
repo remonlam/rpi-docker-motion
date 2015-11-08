@@ -1,6 +1,6 @@
 #Running Motion in a Container on Raspbian Jessie
 ![Docker & Raspberry Pi](/images/docker+rpi.png)
-Format: ![Docker & Raspberry Pi](url)
+
 ##Create a image from the Docker file
 docker build -t rpi-docker-motion .
 
