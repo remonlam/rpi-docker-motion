@@ -14,11 +14,16 @@ wget -P /etc/motion https://raw.githubusercontent.com/remonlam/rpi-docker-motion
 # Download
 wget -P / https://raw.githubusercontent.com/remonlam/rpi-docker-motion/master/startmotion.sh
 
+# Make file executable
+chmod 755 /startmotion.sh
+
 # Create new directory
 mkdir -p /home/pi/mmal
 
-# Download
+# Download motion-mmal
 wget -P /home/pi/mmal https://github.com/remonlam/rpi-docker-motion/raw/master/motion-mmal-opt.tar.gz
 
 # Untar motion-mmal
-tar -zxvf /home/pi/motion-mmal.tar.gz
+tar -zxvf /home/pi/mmal/motion-mmal.tar.gz
+
+wget -P /home/pi/mmal https://raw.githubusercontent.com/remonlam/rpi-docker-motion/master/motion-mmalcam.conf
