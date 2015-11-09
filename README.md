@@ -32,4 +32,5 @@ Once everything is running, we could access the camera by browsing to http://IP-
 NOTE: I've experienced some issues with Internet Explorer, however Firefox, Chrome and Safari should work okay.
 
 ##Some extra options
+####Disable camera LED
 To disable the camera led just add "disable_camera_led=1" to "/boot/config.txt".
