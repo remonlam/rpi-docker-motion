@@ -30,3 +30,6 @@ Well that's kinda easy just add the command "docker start 65875d7b0658" (<-- tha
 ##View the camera
 Once everything is running, we could access the camera by browsing to http://IP-OF-THE-PI (for example: http://192.168.0.100).
 NOTE: I've experienced some issues with Internet Explorer, however Firefox, Chrome and Safari should work okay.
+
+##Some extra options
+To disable the camera led just add "disable_camera_led=1" to "/boot/config.txt".
