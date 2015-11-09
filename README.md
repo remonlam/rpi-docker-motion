@@ -34,3 +34,6 @@ NOTE: I've experienced some issues with Internet Explorer, however Firefox, Chro
 ##Some extra options
 ####Disable camera LED
 To disable the camera led just add "disable_camera_led=1" to "/boot/config.txt".
+
+####Rotate camera 180
+Change the line "rotate 0" to "rotate 180" in /etc/motion/motion.conf
